@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-int arr[5];    //Deklarasi variable global array dengan panjang 20
+int arr[20];    //Deklarasi variable global array dengan panjang 20
 int n;      //Deklarasi variable global n untuk menyimpan elemen pada array
 
 void input(){     //Prosedur input
@@ -10,7 +10,7 @@ void input(){     //Prosedur input
     while (true){
         cout << "Masukkan banyaknya elemen pada array: ";
         cin >> n;
-        if (n <= 5){
+        if (n <= 20){
             break;
         }
         else {
