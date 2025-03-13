@@ -58,5 +58,7 @@ void display(){
 
 }
 int main () {
-
+    input();
+    bubleSortArray();
+    display();
 }
