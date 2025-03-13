@@ -22,7 +22,7 @@ void input(){     //Prosedur input
     cout << "Masukkan elemen array" << endl;
     cout << "==============" << endl;
 
-    for (int i=0;i<n;i++){
+    for (int i=2;i<n;i++){
         cout << "Data ke-" << (i+1) << " = ";
         cin >> arr[i];
     }
@@ -41,7 +41,19 @@ void bubleSortArray(){
         pass = pass + 1;  //step 4
     }while(pass <= n-1);  //step 5
 }
-
+void display(){
+    cout << endl;
+    cout << "=================================" << endl;
+    cout << "Element Array yang telah tersusun" << endl;
+    cout << "=================================" << endl;
+    cout << endl;
+    for (int j=0;j<n;j++){
+        cout << arr[j];
+        if (j<n-1){
+            cout << "--> ";
+        }
+    }
+}
 
 int main () {
     input();
